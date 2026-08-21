@@ -1,0 +1,33 @@
+<!--HTML con clases para luego aplicar CSS--> 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Árbol Binario de Búsqueda — Haskell vs Groovy</title>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <h1>Árbol Binario de Búsqueda</h1>
+
+  <div id="controles" class="panel">
+    <label class="campo">
+      Backend:
+      <select id="backend-select" class="input">
+        <option value="http://localhost:8081">Haskell</option>
+        <option value="http://localhost:8082">Groovy</option>
+      </select>
+    </label>
+    <div class="fila-botones">
+      <input type="number" id="valor-input" class="input" placeholder="Valor">
+      <button id="btn-insertar" class="btn btn-primario">Insertar</button>
+      <button id="btn-buscar" class="btn btn-secundario">Buscar</button>
+      <button id="btn-eliminar" class="btn btn-peligro">Eliminar</button>
+    </div>
+  </div>
+
+  <div id="mensaje" class="mensaje"></div>
+  <svg id="arbol-svg" class="arbol"></svg>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
